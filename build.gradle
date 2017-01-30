@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        /* Asciidoctor to support Vert.X adoc to HTML conversion */
+        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.3'
+    }
+}
+
+/* Asciidoctor to support Vert.X adoc to HTML conversion */
+apply plugin: 'org.asciidoctor.convert'
+
+/* See the following link for more data on running the conversion (header/footer, template, etc.
+
+ http://asciidoctor.org/docs/asciidoctor-gradle-plugin/ 
+
+asciidoctor { 
+    outputDir "${buildDir}/docs"
+    options doctype: 'book', ruby: 'erubis'
+
+    attributes 'source-highlighter': 'coderay',
+                toc                 : '',
+                idprefix            : '',
+                idseparator         : '-'
+}
+
+*/ 
