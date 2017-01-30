@@ -1,0 +1,6 @@
+[submodule "vertx-lang-groovy"]
+	path = vertx-lang-groovy
+	url = https://github.com/vert-x3/vertx-lang-groovy
+[submodule "vertx-core"]
+	path = vertx-core
+	url = https://github.com/eclipse/vert.x.git
