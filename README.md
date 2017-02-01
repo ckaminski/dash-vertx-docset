@@ -4,6 +4,11 @@ Purpose
 ---------- 
 blah blah blah
 
+Dependencies: 
+-----------
+* Groovy 
+* Git 1.8+
+
 
 Building
 ------

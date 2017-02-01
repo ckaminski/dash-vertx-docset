@@ -1,3 +1,10 @@
+plugins { 
+   id 'java'
+
+   /* Asciidoctor to support Vert.X adoc to HTML conversion */
+   id 'org.asciidoctor.convert'
+}
+
 buildscript {
     repositories {
         jcenter()
@@ -8,9 +15,6 @@ buildscript {
         classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.3'
     }
 }
-
-/* Asciidoctor to support Vert.X adoc to HTML conversion */
-apply plugin: 'org.asciidoctor.convert'
 
 /* See the following link for more data on running the conversion (header/footer, template, etc.
 
