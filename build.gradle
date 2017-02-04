@@ -31,3 +31,12 @@ asciidoctor {
 }
 
 */ 
+
+/* Run the submodule init */
+task gitInit { 
+   // git submodule init 
+} 
+
+task gitGetLatestTags(dependsOn: gitInit) {
+   // recurses each submodule and updates to latest version tag. 
+}
